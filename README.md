@@ -4,20 +4,20 @@ Library for adding a UGC editor to the InAppStorySDK
 
 ## Contents
 
-* [Installation](https://github.com/inappstory/ios-sdk#Installation)
-	* [CocoaPods](https://github.com/inappstory/ios-sdk#CocoaPods)
-	* [Carthage](https://github.com/inappstory/ios-sdk#Carthage)
-	* [Swift Package Manager](https://github.com/inappstory/ios-sdk#Swift-Package-Manager)
-	* [Manual installation](https://github.com/inappstory/ios-sdk#Manual-installation)
-	* [Library import](https://github.com/inappstory/ios-sdk#Library-import)
-* [InAppStoryEditor](https://github.com/inappstory/ios-sdk#InAppStory)
-	* [Initialization](https://github.com/inappstory/ios-sdk#Initialization)
-	* [Methods](https://github.com/inappstory/ios-sdk#Methods)
-	* [Parameters and properties](https://github.com/inappstory/ios-sdk#Parameters-and-properties)
-* [Protocols](https://github.com/inappstory/ios-sdk#Protocols)
-	* [PlaceholderProtocol](https://github.com/inappstory/ios-sdk#PlaceholderProtocol)
-	* [GamePlaceholderProtocol](https://github.com/inappstory/ios-sdk#DownloadPlaceholderProtocol)
-* [Sample](https://github.com/inappstory/ios-sdk#Sample)
+* [Installation](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Installation)
+	* [CocoaPods](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#CocoaPods)
+	* [Carthage](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Carthage)
+	* [Swift Package Manager](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Swift-Package-Manager)
+	* [Manual installation](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Manual-installation)
+	* [Library import](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Library-import)
+* [InAppStoryEditor](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#InAppStory)
+	* [Initialization](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Initialization)
+	* [Methods](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Methods)
+	* [Parameters and properties](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Parameters-and-properties)
+* [Protocols](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Protocols)
+	* [PlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#PlaceholderProtocol)
+	* [GamePlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#DownloadPlaceholderProtocol)
+* [Sample](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Sample)
 
 ## Installation
 
@@ -92,7 +92,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 * `serviceKey` - service authorization key (\<*String*>); 
 * `testKey ` - test authorization key in the service (\<*String*>);  
-* `settings` - configuration object (*<[Settings?](https://github.com/inappstory/ios-sdk#Settings)>* - *optional*).
+* `settings` - configuration object (*<[Settings?](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Settings)>* - *optional*).
 
 >**Attention!**  
 >If you pass *testKey*, then the library will display the stories only in the **"Moderation"** status.
@@ -111,7 +111,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 ### Parameters and properties
-* `editorPlaceholderView` - custom loader, should implement the protocol *<[DownloadPlaceholderProtocol](https://github.com/inappstory/ios-sdk#DownloadPlaceholderProtocol)>*;
+* `editorPlaceholderView` - custom loader, should implement the protocol *<[DownloadPlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#DownloadPlaceholderProtocol)>*;
 
 ## Protocols
 
