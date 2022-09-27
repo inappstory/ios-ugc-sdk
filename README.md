@@ -1,4 +1,4 @@
-# InAppStory UGC
+# InAppStory UGC for SwiftUI
 
 Library for adding a UGC editor to the InAppStorySDK
 
@@ -23,7 +23,7 @@ Library for adding a UGC editor to the InAppStorySDK
 
 | InAppStory version | Build version | iOS version |
 |--------------------|---------------|-------------|
-| 1.0.0              | 235           | >= 11.0     |
+| 1.0.0              | 235           | >= 13.4     |
 
 Version of the library can be obtained from the parameter `InAppStoryEditor.frameworkInfo`
 
@@ -34,7 +34,7 @@ Version of the library can be obtained from the parameter `InAppStoryEditor.fram
 
 ```ruby
 use_frameworks!
-pod 'InAppStory', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
+pod 'InAppStory', :git => 'https://github.com/inappstory/ios-ugc-sdk.git', :tag => '1.0.0-SwiftUI'
 ```
 
 ### Carthage
@@ -42,7 +42,7 @@ pod 'InAppStory', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate InAppStory into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "inappstory/ios-ugc-sdk" ~> 1.0.0
+github "inappstory/ios-ugc-sdk" ~> 1.0.0-SwiftUI
 ```
 
 ### Swift Package Manager
@@ -53,13 +53,13 @@ Once you have your Swift package set up, adding InAppStory as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.0.0-SwiftUI"))
 ]
 ```
 
 ### Manual installation
 
-Download `InAppStoryUGC.xcframework` from the repository. Connect in the project settings on the *General* tab.
+Download `InAppStoryUGC_SwiftUI	.xcframework` from the repository. Connect in the project settings on the *General* tab.
 
 
 ### Library import
@@ -69,8 +69,8 @@ The UGC editor works only with InAppStorySDK frameworks. The SDK must be importe
 ##### Swift
 
 ```swift
-import InAppStorySDK
-import InAppStoryUGC
+import InAppStorySDK_SwiftUI
+import InAppStoryUGC_SwiftUI
 ```
 
 ## InAppStoryEditor
@@ -110,11 +110,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### Methods
-
-* `showEditor(from target: <UIViewController>, delegate: <InAppStoryEditorDelegate>? = nil, complete: (<Bool>) -> Void)` - presenting UGC editor from target controller;
-* `func closeEditor(complete: () -> Void)` - close UGC editor.
-
 ### Parameters and properties
 * `editorPlaceholderView` - custom loader, should implement the protocol *<[DownloadPlaceholderProtocol](https://github.com/inappstory/ios-sdk#DownloadPlaceholderProtocol)>*;
 
@@ -129,11 +124,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Sample
 
-First you need to initialize the InAppStorySDK and enable the editor cell display in the history lists.
+First you need to initialize the InAppStorySDK_SwiftUI and enable the editor cell display in the history lists.
 
 #### AppDelegate.swift
 ```swift
-import InAppStory
+import InAppStorySDK_SwiftUI
 ...
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool 
@@ -147,59 +142,34 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-Next, in the controller, create a StoryView to display a list of stories.
+Next, in the View, create a StoryListView to display a list of stories.
 
 >**Attention!**  
->For the UGC editor to work properly, you must install and import the InAppStorySDK.
+>For the UGC editor to work properly, you must install and import the InAppStorySDK_SwiftUI.
 
-#### ViewController.swift
+#### ContentView.swift
 ```swift
-import InAppStory // import main framework
-import InAppStoryUGC // import UGC editor framework
+import InAppStorySDK_SwiftUI // import main framework
+import InAppStoryUGC_SwiftUI // import UGC editor framework
 
-class ViewController: UIViewController {
+struct ContentView: View {
+    // Editor showing state var
+    @State private var isEditorShowing: Bool = false
 
-    // StoryView variable declaration
-    fileprivate var storyView: StoryView! 
-...
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // creating a StoryView with a default list of stories and setting the size
-        storyView = StoryView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 160))
-        // specifies the target for the StoryView from which the Story Reader will be displayed
-        storyView.target = self
-        // specifies a delegate in which the StoryView actions can be tracked
-        storyView.storiesDelegate = self
-        // adding StoryView to the controller's view
-        view.addSubview(storyView)
-        
-        // running the internal StoryView logic to retrieve a list of stories
-        storyView.create()
-    }
-}
-
-extension ViewController: InAppStoryDelegate
-{
-    // called after the contents are updated for sories type
-    func storiesDidUpdated(isContent: Bool, from storyType: StoriesType) { ... }
-    // called after a link is received from stories with the interaction type and stories type
-    func storyReader(actionWith target: String, for type: ActionType, from storyType: StoriesType) { ... }
-    // called after editor cell tapped in stories list
-    func editorCellDidSelect()
-    {
-        // showing an editor with specifying from where to show it and adding a delegate to it
-        InAppStoryEditor.shared.showEditor(from: self, delegate: self) { show in
-            // called after editor screen showing
+    var body: some View {
+        VStack {
+            // Creating StoryListView with default feed & settings
+            StoryListView(editorSelect: {
+                // called after taping the editor cell in the list
+                // toggle state of editor
+                isEditorShowing.toggle()
+            })
         }
+        // View modificator for showng Editor screen
+        .storyEditor(isPresented: $isEditorShowing, onDismiss: {
+            // сalled when the editor is closed
+        })
     }
 }
 
-// delegate methods for the editor
-extension ViewController: InAppStoryEditorDelegate
-{
-    // called before closing the editor screen
-    func editorWillShow() { ... }
-    // called after closing the editor screen
-    func editorDidClose() { ... }
-}   
 ```

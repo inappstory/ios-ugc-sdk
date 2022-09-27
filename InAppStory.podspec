@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.name = 'InAppStoryUGC'
+    s.name = 'InAppStoryUGC_SwiftUI'
     s.version = '1.0.0'
     s.platform = :ios, '11.0'
     s.license  = { :type => 'MIT', :file => 'LICENSE' }

@@ -4,18 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "InAppStoryUGC",
+    name: "InAppStoryUGC_SwiftUI",
     platforms: [
         .iOS(.v10)
     ],
     products: [
-        .library(name: "InAppStoryUGC", targets: ["InAppStoryUGC"])
+        .library(name: "InAppStoryUGC_SwiftUI", targets: ["InAppStoryUGC_SwiftUI"])
     ],
     targets: [
-        .binaryTarget(name: "InAppStoryUGC",
-                      url: "https://cs.inappstory.com/iOS/InAppStoryUGC-1.0.0.xcframework.zip",
-                      checksum: "d5060c64c8af6a2268103f9f832efbe15231cd9adf6e100fdea240e5fd79ebb0"
+        .binaryTarget(name: "InAppStoryUGC_SwiftUI",
+                      url: "https://cs.inappstory.com/iOS/InAppStoryUGC_SwiftUI-1.0.0.xcframework.zip",
+                      checksum: "a834ae167d901c24da6a0af7c5d6eeead7b228bbf79f9ac12906cc639b6971d7"
                 )
     ],
     swiftLanguageVersions: [.v5]
 )
+
