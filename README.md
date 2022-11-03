@@ -34,7 +34,7 @@ Version of the library can be obtained from the parameter `InAppStoryEditor.fram
 
 ```ruby
 use_frameworks!
-pod 'InAppStory', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
+pod 'InAppStoryUGC', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
 ```
 
 ### Carthage
