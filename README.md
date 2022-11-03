@@ -34,7 +34,7 @@ Version of the library can be obtained from the parameter `InAppStoryEditor.fram
 
 ```ruby
 use_frameworks!
-pod 'InAppStoryUGC', :git => 'https://github.com/inappstory/ios-ugc-sdk.git', :tag => '1.0.0-SwiftUI'
+pod 'InAppStoryUGC_SwiftUI', :git => 'https://github.com/inappstory/ios-ugc-sdk.git', :tag => '1.0.0-SwiftUI'
 ```
 
 ### Carthage
