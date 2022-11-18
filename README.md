@@ -200,7 +200,7 @@ extension ViewController: InAppStoryDelegate
     func editorCellDidSelect()
     {
         // showing an editor with specifying from where to show it and adding a delegate to it
-        InAppStoryEditor.shared.showEditor(from: self, delegate: self, payload: Dictionary<String, Any>) { show in
+        InAppStoryEditor.shared.showEditor(payload: Dictionary<String, Any>, from: self, delegate: self) { show in
             // called after editor screen showing
         }
     }
