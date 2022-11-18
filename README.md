@@ -97,19 +97,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 >**Attention!**  
 >If you pass *testKey*, then the library will display the stories only in the **"Moderation"** status.
 
-To enable the display of the editor cell in the list of stories, you must also specify `isEditorEnabled = true`.
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool 
-{
-   // Init InAppstorySDK
-   InAppStory.shared.initWith(serviceKey: <String>, testKey: <String>, settings: <Settings?>)
-   // Enabling the UGC editor cell display in the list of stories
-   InAppStory.shared.isEditorEnabled = true
-   return true
-}
-```
-
 ### Methods
 
 * `showEditor(payload: Dictionary<String, Any?>? = nil, from target: <UIViewController>, delegate: <InAppStoryEditorDelegate>? = nil, complete: (<Bool>) -> Void)` - presenting UGC editor from target controller;
