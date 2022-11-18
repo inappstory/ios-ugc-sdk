@@ -13,10 +13,6 @@ import UIKit
 import UniformTypeIdentifiers
 import WebKit
 import _Concurrency
-public protocol InAppStoryEditorDelegate : ObjectiveC.NSObjectProtocol {
-  func editorWillShow()
-  func editorDidClose()
-}
 @objc @_inheritsConvenienceInitializers public class InAppStoryEditor : ObjectiveC.NSObject {
   public static let shared: InAppStoryUGC.InAppStoryEditor
   public static let VersionSDK: Swift.String
@@ -29,7 +25,7 @@ public protocol InAppStoryEditorDelegate : ObjectiveC.NSObjectProtocol {
   @objc deinit
 }
 extension InAppStoryUGC.InAppStoryEditor {
-  public func showEditor(from target: UIKit.UIViewController, delegate: InAppStoryUGC.InAppStoryEditorDelegate? = nil, complete: @escaping (_ show: Swift.Bool) -> Swift.Void)
+  public func showEditor(payload: Swift.Dictionary<Swift.String, Any?>? = nil, from target: UIKit.UIViewController, delegate: InAppStoryUGC.InAppStoryEditorDelegate? = nil, complete: @escaping (_ show: Swift.Bool) -> Swift.Void)
   public func closeEditor(complete: @escaping () -> Swift.Void)
 }
 public enum AssetType : Swift.String {
@@ -70,6 +66,9 @@ extension InAppStoryUGC.AssetsPicker : UIKit.UICollectionViewDelegateFlowLayout 
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+}
+public protocol InAppStoryEditorDelegate : ObjectiveC.NSObjectProtocol {
+  func editorEvent(name: Swift.String, data: Swift.Dictionary<Swift.String, Any>)
 }
 public struct FilePickerOptions : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws

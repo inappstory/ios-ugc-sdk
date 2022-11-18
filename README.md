@@ -15,15 +15,15 @@ Library for adding a UGC editor to the InAppStorySDK
 	* [Methods](https://github.com/inappstory/ios-ugc-sdk#Methods)
 	* [Parameters and properties](https://github.com/inappstory/ios-ugc-sdk#Parameters-and-properties)
 * [Protocols](https://github.com/inappstory/ios-ugc-sdk#Protocols)
-	* [PlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk#PlaceholderProtocol)
-	* [GamePlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk#DownloadPlaceholderProtocol)
+	* [InAppStoryEditorDelegate](https://github.com/inappstory/ios-ugc-sdk#InAppStoryEditorDelegate)
+	* [DownloadPlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk#DownloadPlaceholderProtocol)
 * [Sample](https://github.com/inappstory/ios-ugc-sdk#Sample)
 
 ## Installation
 
 | InAppStory version | Build version | iOS version |
 |--------------------|---------------|-------------|
-| 1.0.0              | 235           | >= 11.0     |
+| 1.1.0              | 302           | >= 11.0     |
 
 Version of the library can be obtained from the parameter `InAppStoryEditor.frameworkInfo`
 
@@ -42,7 +42,7 @@ pod 'InAppStoryUGC', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate InAppStory into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "inappstory/ios-ugc-sdk" ~> 1.0.0
+github "inappstory/ios-ugc-sdk" ~> 1.1.0
 ```
 
 ### Swift Package Manager
@@ -53,7 +53,7 @@ Once you have your Swift package set up, adding InAppStory as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.1.0"))
 ]
 ```
 
@@ -120,12 +120,37 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Protocols
 
+### InAppStoryEditorDelegate
+
+* `editorEvent(name: String, data: Dictionary<String, Any>)` - editor events [Full list of events](https://github.com/inappstory/ios-ugc-sdk#ListOfDelegateEvents);
+
 ### DownloadPlaceholderProtocol  
 
 * `isAnimate: <Bool> { get }` - returns the state of the animation
 * `start` - start animation
 * `stop` - stop animation
 
+## List of delegate events
+
+The `InAppStoryEditorDelegate` can receive the following events from the editor:
+
+* `editorWillShow` - library will show editor screen;
+* `editorDidClose` - library did cloe editor screen;
+* `slideAdded` - a slide was added to the editor. Parameters:
+    * `slideIndex` - index of the added slide;
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+* `slideRemoved` - a slide was removed in the editor. Parameters:
+    * `slideIndex` - index of the removed slide;
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+* `storyPublishedSuccess` - The story has been sent for moderation. Parameters:
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+* `storyPublishedFail` - failed to submit the story for moderation. Parameters:
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+    * `reason` - the cause of the error, when sending for moderation;
 
 ## Sample
 
@@ -188,7 +213,7 @@ extension ViewController: InAppStoryDelegate
     func editorCellDidSelect()
     {
         // showing an editor with specifying from where to show it and adding a delegate to it
-        InAppStoryEditor.shared.showEditor(from: self, delegate: self) { show in
+        InAppStoryEditor.shared.showEditor(from: self, delegate: self, payload: Dictionary<String, Any>) { show in
             // called after editor screen showing
         }
     }
@@ -197,9 +222,7 @@ extension ViewController: InAppStoryDelegate
 // delegate methods for the editor
 extension ViewController: InAppStoryEditorDelegate
 {
-    // called before closing the editor screen
-    func editorWillShow() { ... }
-    // called after closing the editor screen
-    func editorDidClose() { ... }
+    // all of editor events (editorWillShow, editorDidClose,...)
+    func editorEvent(name: String, data: Dictionary<String, Any>) {...}
 }   
 ```
