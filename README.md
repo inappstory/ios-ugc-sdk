@@ -112,7 +112,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ### Methods
 
-* `showEditor(from target: <UIViewController>, delegate: <InAppStoryEditorDelegate>? = nil, complete: (<Bool>) -> Void)` - presenting UGC editor from target controller;
+* `showEditor(payload: Dictionary<String, Any?>? = nil, from target: <UIViewController>, delegate: <InAppStoryEditorDelegate>? = nil, complete: (<Bool>) -> Void)` - presenting UGC editor from target controller;
 * `func closeEditor(complete: () -> Void)` - close UGC editor.
 
 ### Parameters and properties
