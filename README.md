@@ -15,15 +15,16 @@ Library for adding a UGC editor to the InAppStorySDK
 	* [Methods](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Methods)
 	* [Parameters and properties](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Parameters-and-properties)
 * [Protocols](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Protocols)
-	* [PlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#PlaceholderProtocol)
-	* [GamePlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#DownloadPlaceholderProtocol)
+	* [InAppStoryEditorDelegate](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#InAppStoryEditorDelegate)
+	* [DownloadPlaceholderProtocol](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#DownloadPlaceholderProtocol)
+
 * [Sample](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#Sample)
 
 ## Installation
 
 | InAppStory version | Build version | iOS version |
 |--------------------|---------------|-------------|
-| 1.0.0              | 235           | >= 13.4     |
+| 1.1.0              | 302           | >= 13.4     |
 
 Version of the library can be obtained from the parameter `InAppStoryEditor.frameworkInfo`
 
@@ -34,7 +35,7 @@ Version of the library can be obtained from the parameter `InAppStoryEditor.fram
 
 ```ruby
 use_frameworks!
-pod 'InAppStoryUGC_SwiftUI', :git => 'https://github.com/inappstory/ios-ugc-sdk.git', :tag => '1.0.0-SwiftUI'
+pod 'InAppStoryUGC_SwiftUI', :git => 'https://github.com/inappstory/ios-ugc-sdk.git', :tag => '1.1.0-SwiftUI'
 ```
 
 ### Carthage
@@ -42,7 +43,7 @@ pod 'InAppStoryUGC_SwiftUI', :git => 'https://github.com/inappstory/ios-ugc-sdk.
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate InAppStory into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "inappstory/ios-ugc-sdk" ~> 1.0.0-SwiftUI
+github "inappstory/ios-ugc-sdk" ~> 1.1.0-SwiftUI
 ```
 
 ### Swift Package Manager
@@ -53,13 +54,13 @@ Once you have your Swift package set up, adding InAppStory as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.0.0-SwiftUI"))
+    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.1.0-SwiftUI"))
 ]
 ```
 
 ### Manual installation
 
-Download `InAppStoryUGC_SwiftUI	.xcframework` from the repository. Connect in the project settings on the *General* tab.
+Download `InAppStoryUGC_SwiftUI.xcframework` from the repository. Connect in the project settings on the *General* tab.
 
 
 ### Library import
@@ -121,6 +122,28 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 * `start` - start animation
 * `stop` - stop animation
 
+## List of delegate events
+
+The `InAppStoryEditorDelegate` can receive the following events from the editor:
+
+* `editorWillShow` - library will show editor screen;
+* `editorDidClose` - library did cloe editor screen;
+* `slideAdded` - a slide was added to the editor. Parameters:
+    * `slideIndex` - index of the added slide;
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+* `slideRemoved` - a slide was removed in the editor. Parameters:
+    * `slideIndex` - index of the removed slide;
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+* `storyPublishedSuccess` - The story has been sent for moderation. Parameters:
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+* `storyPublishedFail` - failed to submit the story for moderation. Parameters:
+    * `totalSlides` - total number of slides;
+    * `ts` - time of the event in timestamp format;
+    * `reason` - the cause of the error, when sending for moderation;
+
 
 ## Sample
 
@@ -166,10 +189,13 @@ struct ContentView: View {
             })
         }
         // View modificator for showng Editor screen
-        .storyEditor(isPresented: $isEditorShowing, onDismiss: {
+        .storyEditor(isPresented: $isEditorShowing, payload: [:], onDismiss: {
             // сalled when the editor is closed
+        }, editorEvent: { name, data in
+            // сalled when the editor send event
         })
     }
 }
-
 ```
+
+Full list of editor events [Full list of events](https://github.com/inappstory/ios-ugc-sdk/tree/SwiftUI#ListOfDelegateEvents)
