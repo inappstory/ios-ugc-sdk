@@ -152,8 +152,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 {
    // Init InAppstorySDK
    InAppStory.shared.initWith(serviceKey: <String>, testKey: <String>, settings: <Settings?>)
-   // Enabling the UGC editor cell display in the list of stories
-   InAppStory.shared.isEditorEnabled = true
    
    return true
 }
@@ -180,6 +178,8 @@ class ViewController: UIViewController {
         storyView = StoryView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 160))
         // specifies the target for the StoryView from which the Story Reader will be displayed
         storyView.target = self
+        // Enabling the UGC editor cell display in the list of stories
+        storyView.isEditorEnabled = true
         // specifies a delegate in which the StoryView actions can be tracked
         storyView.storiesDelegate = self
         // adding StoryView to the controller's view
@@ -200,7 +200,7 @@ extension ViewController: InAppStoryDelegate
     func editorCellDidSelect()
     {
         // showing an editor with specifying from where to show it and adding a delegate to it
-        InAppStoryEditor.shared.showEditor(payload: Dictionary<String, Any>, from: self, delegate: self) { show in
+        InAppStoryEditor.shared.showEditor(payload: [<String>:<Any>], from: self, delegate: self) { show in
             // called after editor screen showing
         }
     }
