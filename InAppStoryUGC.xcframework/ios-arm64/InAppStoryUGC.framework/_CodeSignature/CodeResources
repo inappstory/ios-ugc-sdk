@@ -12,6 +12,10 @@
 		<data>
 		yV3lsKoffTpaxspfagBbI+M2r8o=
 		</data>
+		<key>Assets.car</key>
+		<data>
+		Ox0Y0FJ8jQE8MxoR8RHkJ36nZHw=
+		</data>
 		<key>CameraCell.nib/objects-12.3+.nib</key>
 		<data>
 		+5Q/+WYjdWxb4N9TUVUZnuXhsI8=
@@ -30,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+qr40IiAfZ3DT+F9hSBfb3hWjDI=
+		/MOzVmOGeNMTNiSWuMtQDyV+1fE=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YgYM1JsIbzlR18qTBzVLDQ46r3w=
+		sk6jfxgGe8vaFPmJrQuBl9NT984=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,6 +67,13 @@
 			<key>hash2</key>
 			<data>
 			A7B4He1USUjevx/dvCEmUVzY8pvM2UrA1iEjWSzd/uY=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CcHZv9SygFQiKRoVuMevHvVEN7DkckD4YMpaKdBbQl4=
 			</data>
 		</dict>
 		<key>CameraCell.nib/objects-12.3+.nib</key>
@@ -111,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kw9XixxvAuH92m9Pxn3umRomsvadSHUolFpqm3ehmi0=
+			3alTF1XK6/M3Z3tbpeF6m9ystGrk/jJRWRoF3mL4DcM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
