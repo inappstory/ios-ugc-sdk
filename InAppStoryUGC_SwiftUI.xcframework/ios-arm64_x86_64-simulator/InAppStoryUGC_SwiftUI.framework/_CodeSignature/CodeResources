@@ -8,6 +8,10 @@
 		<data>
 		/df3boz+mg4tYsx9IIfWtTI9DpE=
 		</data>
+		<key>Assets.car</key>
+		<data>
+		w6k/dR2zEBUNuhphJSyfG49i4Q0=
+		</data>
 		<key>CameraCell.nib</key>
 		<data>
 		PPJHHONHYWEh/lBb+cr0du26zhc=
@@ -22,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OitSKL30pmCaiecxvk1Ia1xHFwQ=
+		TNyl8Xv0sKlADqJE4XPl3+bvYIs=
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g0/m7TjJdVIQ95VOMhtByGn+no0=
+		cnBGPA8l9w5hUfBWqwBEEvBAMD4=
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JRnIKmET3L2KL0/8tYjLiq6sdVM=
+		7WzlwZOVEOp6vZO1uyQiwcIb538=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -60,6 +64,13 @@
 			<key>hash2</key>
 			<data>
 			JC5X9YmxAguwlAirrmMVz1qjS1nWmOM65XptzNRMXws=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rklIkTZ0sbZncSHeSmqA/SQVCeAgLRnaD5DbY2+3VBk=
 			</data>
 		</dict>
 		<key>CameraCell.nib</key>
@@ -101,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VqFNutoyFT7TFdudA5SRI2z8YoW4HKpRwBYXxUFUTWw=
+			aYfQmZLR1+dTJdXthLTkjZ6CoDQW1UUGa/kANYzhpxQ=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -122,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qmqsWhAQ9sR7aJosd50x+3ZzpZRQ+b4zmHpZ5MRMopI=
+			JPCjgOb95o49xEns7CSEVysuP7KiefEmrD9ZYi7ZnPs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
