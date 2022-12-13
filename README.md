@@ -23,7 +23,7 @@ Library for adding a UGC editor to the InAppStorySDK
 
 | InAppStory version | Build version | iOS version |
 |--------------------|---------------|-------------|
-| 1.1.4              | 318           | >= 11.0     |
+| 1.1.5              | 322           | >= 11.0     |
 
 Version of the library can be obtained from the parameter `InAppStoryEditor.frameworkInfo`
 
@@ -42,7 +42,7 @@ pod 'InAppStoryUGC', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate InAppStory into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "inappstory/ios-ugc-sdk" ~> 1.1.4
+github "inappstory/ios-ugc-sdk" ~> 1.1.5
 ```
 
 ### Swift Package Manager
@@ -53,7 +53,7 @@ Once you have your Swift package set up, adding InAppStory as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.1.4"))
+    .package(url: "https://github.com/inappstory/ios-ugc-sdk.git", .upToNextMajor(from: "1.1.5"))
 ]
 ```
 
