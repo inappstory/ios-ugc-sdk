@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/InAppStoryUGC-Swift.h</key>
 		<data>
-		nlmtUMzlGmfSjx2xntm+RulaXKM=
+		ewsNJfeCDHhSOZjl4i8TUBHQ0U0=
 		</data>
 		<key>Headers/InAppStoryUGC.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9Lmn7NFnzKwinLJmy59CPdjg108=
+		1/Mr7p327yLFsfG9H/GN71CMK9g=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4gwyQGXJpi8YrspZNFrSpZAR50k=
+		hm9DffWrtL9Q8cYWtNm3JZMeA8U=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PX6tphMHTfGJU5+KIejtSNYDbUo=
+		sAc2W5xUAKHbTFmmNn5NJorXyjs=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oeLzGNAd84Aj97QuQLI0a2kWNhY=
+		aC0sY58mzrsY+81sqnsKIqga9SY=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V83uooGQfOGeTb7PJcLxcPzTcFI=
+		PQUH9Kv5bj8OWH2Eu6TxhkMazvY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TnjkHrTd6MUkjoSifVFcUHkQ3VANOlqgykNKlQA92UE=
+			0yyHDc+qXH2OfDlIdiyGq3hQ2ViOt3r/88mtyDfsNOc=
 			</data>
 		</dict>
 		<key>Headers/InAppStoryUGC.h</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uoqYDHQpu2UlUU8T5Zc0OEuHnVy4I0dcQ8NN7QxXTG4=
+			4ndxPuII0JkvY15bP36hHv1wIdiARHK0cklHvrk0E9M=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJJeZbGNlya8HxmTM3vdEztkz2b4SYWhV1j5OYM2KaA=
+			FsJiyIFo22vLPnRVIIwyT1M7GI4pSKuRwnBfxxR8Nr4=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cg1kP1nbUV5Kwyzi00LSkMVG2bMEJFtoQY3HZpL7nv4=
+			MLtF1TBjTaGQO9pGDNgZCGIEjqUWMnn6lC+YtXs3w0M=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JX42+IJLAxceGU61GmtS+xXj8yidXX9EK7Th1XDG1/4=
+			5dzBccNSXAK8UtDrQLbRFsemgQyaqw5bkPN26rVejXc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
