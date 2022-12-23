@@ -257,10 +257,12 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 
 
 
+
 SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI16InAppStoryEditor")
 @interface InAppStoryEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -528,10 +530,12 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 
 
 
+
 SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI16InAppStoryEditor")
 @interface InAppStoryEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
