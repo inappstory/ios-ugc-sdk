@@ -32,6 +32,7 @@ extension InAppStoryUGC.InAppStoryEditor {
 public enum AssetType : Swift.String {
   case image
   case video
+  case mixed
   public static func assetTypeBy(config: Swift.String) -> InAppStoryUGC.AssetType
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -39,13 +40,10 @@ public enum AssetType : Swift.String {
     get
   }
 }
-public protocol AssetsPickerDelegate : ObjectiveC.NSObjectProtocol {
-  func getAssetURL(url: Foundation.URL?, fileType: InAppStoryUGC.AssetType)
-}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AssetsPicker : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: InAppStoryUGC.AssetsPickerDelegate?
   @_Concurrency.MainActor(unsafe) public var assetType: InAppStoryUGC.AssetType
   @_Concurrency.MainActor(unsafe) public var acceptTypes: [Swift.String]
+  @_Concurrency.MainActor(unsafe) public var multiple: Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @_Concurrency.MainActor(unsafe) @objc get
   }

@@ -6,11 +6,11 @@
 	<dict>
 		<key>AssetCell.nib/objects-12.3+.nib</key>
 		<data>
-		wKfLGn2gWApoBSWAzmGYq7k7UII=
+		Ab/jbIXCVQ0YQtpI0WpWPOCAKeI=
 		</data>
 		<key>AssetCell.nib/runtime.nib</key>
 		<data>
-		yV3lsKoffTpaxspfagBbI+M2r8o=
+		pGJA9PClaTyii/pDQethD7jbVTw=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/InAppStoryUGC-Swift.h</key>
 		<data>
-		ewsNJfeCDHhSOZjl4i8TUBHQ0U0=
+		wTrSwBfMMIVptPytXf0cDR+ZjFk=
 		</data>
 		<key>Headers/InAppStoryUGC.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BmMlFlSVj8Yy/AmPwA6fKN6Fr2Q=
+		vNAXcOPFDfi1Ko8fsAKjoGO2N1g=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hm9DffWrtL9Q8cYWtNm3JZMeA8U=
+		4Cyv0+TjaMRJAFQUf6qo7wHU5OE=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O6Q/9yIhgwJpiNnrs3V4MUP48Gk=
+		pGpWLZpb9YRsseFASXafXRQT+Kg=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aC0sY58mzrsY+81sqnsKIqga9SY=
+		mKuXKoiRYFztmItWrit/FQd7g3s=
 		</data>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1fk1ioS0qocMyB7THbYj9kOLifY=
+		nE84Du7lVbcu7fDHYa0ZBtzsfis=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QzC7e8YfVQkiqxqFiWIMTUyesnevOH4vsWQGNt/6Ac=
+			IKcjFk+0IZOYytLvdpfV/QMWsx8YlEnJNlVWisUWpes=
 			</data>
 		</dict>
 		<key>AssetCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A7B4He1USUjevx/dvCEmUVzY8pvM2UrA1iEjWSzd/uY=
+			kp3b7Vid2UaEBpucBDuVs6n2NmeJ+yA5avdKnAnjK6k=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0yyHDc+qXH2OfDlIdiyGq3hQ2ViOt3r/88mtyDfsNOc=
+			NdCN23N5sDqC551MrD8WCA6ydNkUTsbO4z4trQdI7W8=
 			</data>
 		</dict>
 		<key>Headers/InAppStoryUGC.h</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ndxPuII0JkvY15bP36hHv1wIdiARHK0cklHvrk0E9M=
+			TH7IhQMMOTtotB1ikbu0DTZkoYXeqD2yB/gWq4Z+WBc=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RPOGdn9nqntK+c+bcfSv1HQ7bpZOIhVCuNHWwNIPnBA=
+			qiIXh1f6+1BxL0pxEJoje6l0vFLxM5frEe9fb2H2dO8=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MLtF1TBjTaGQO9pGDNgZCGIEjqUWMnn6lC+YtXs3w0M=
+			DI2Kg3CTMeHhThNuGfq5TXDag5GWdb05HsSqO1puC8o=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5YdHYcWQL/yWsMmVTzDVr2B4p91itGrKqw+9uBnL+s4=
+			rLzivsp/WtOS4RAjGmcSGJaiS/ndvwbgqsXPn8lDZms=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

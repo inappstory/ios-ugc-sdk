@@ -13,8 +13,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "InAppStoryUGC",
-                      url: "https://cs.inappstory.com/iOS/InAppStoryUGC-1.1.7.xcframework.zip",
-                      checksum: "c270b74f7585ee8fcef7fc02249d7a55c3d6c32f7d3d3cec6877957513c16383"
+                      url: "https://github.com/inappstory/ios-ugc-sdk/files/11345958/InAppStoryUGC-1.2.0.xcframework.zip",
+                      checksum: "1db1ea5ce62a7eca6b1d08c1501be8d1cabe4ded47adbef25b346b31f251f1c1"
                 )
     ],
     swiftLanguageVersions: [.v5]

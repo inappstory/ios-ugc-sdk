@@ -229,7 +229,6 @@ SWIFT_CLASS("_TtC13InAppStoryUGC12AssetsPicker")
 @end
 
 
-
 @class UICollectionView;
 @class NSIndexPath;
 
@@ -244,6 +243,7 @@ SWIFT_CLASS("_TtC13InAppStoryUGC12AssetsPicker")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 @class UICollectionViewLayout;
 
 @interface AssetsPicker (SWIFT_EXTENSION(InAppStoryUGC)) <UICollectionViewDelegateFlowLayout>
@@ -256,10 +256,13 @@ SWIFT_CLASS("_TtC13InAppStoryUGC12AssetsPicker")
 
 
 
+
 SWIFT_CLASS("_TtC13InAppStoryUGC16InAppStoryEditor")
 @interface InAppStoryEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
