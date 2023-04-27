@@ -6,7 +6,7 @@
 	<dict>
 		<key>AssetCell.nib</key>
 		<data>
-		/df3boz+mg4tYsx9IIfWtTI9DpE=
+		3Km+3WnP92FSMZ8Wj1jXHiULJVk=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/InAppStoryUGC_SwiftUI-Swift.h</key>
 		<data>
-		XHzvGTw6PEva926uN/LyG9tutdw=
+		hw1VqZoZdKOvVrLO6T3Sn416UdE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0tYwOkBN0z2wBrCstyFVcGKWGgs=
+		0OBU2Q6t0WxdW4uC1w1hKe0tL1g=
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RB0rZtEYDQcRkpbCfH874Yno5QE=
+		F/X+fylGEoiBoNjCSa6tLSDj5GM=
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xMGs7ePlYLuQF+8gXhow9F0laLo=
+		qED4vg5A+JvsXmmKEE9PYeUJ2UQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JC5X9YmxAguwlAirrmMVz1qjS1nWmOM65XptzNRMXws=
+			AjK/Ft3tKaFa67sdaBTkR/8KPjwL/ifBFqva7+4vaeI=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ck7VQMFwXBDw9tOxLF2l5kq/6uvOSRpGMgvSarPdSE8=
+			UZB8p3lsNm/KS/otg5M6puncjMeik4hqFhEnRiY5OP4=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s54J+B4j85FpTwATY/oQ6DbSDseNWJC5/oBDGooEtr4=
+			cSiLhgTywHXpo1dD5YRaJMKPbjAl3Fo1lkrPVwMLhyo=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VdkF04Pl0OZfx6eEWg3NdatpbHW1U+YRc+YIg+WDvMM=
+			CXdXNI2deTOEJIRFUUA9n669GlZHMhH76BHuHItwolQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

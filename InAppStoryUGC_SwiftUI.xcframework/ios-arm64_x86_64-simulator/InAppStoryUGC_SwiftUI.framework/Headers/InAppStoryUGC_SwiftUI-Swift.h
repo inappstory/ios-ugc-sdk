@@ -231,7 +231,6 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 @end
 
 
-
 @class UICollectionView;
 @class NSIndexPath;
 
@@ -246,6 +245,7 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 @class UICollectionViewLayout;
 
 @interface AssetsPicker (SWIFT_EXTENSION(InAppStoryUGC_SwiftUI)) <UICollectionViewDelegateFlowLayout>
@@ -258,10 +258,13 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 
 
 
+
 SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI16InAppStoryEditor")
 @interface InAppStoryEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
@@ -504,7 +507,6 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 @end
 
 
-
 @class UICollectionView;
 @class NSIndexPath;
 
@@ -519,6 +521,7 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 @class UICollectionViewLayout;
 
 @interface AssetsPicker (SWIFT_EXTENSION(InAppStoryUGC_SwiftUI)) <UICollectionViewDelegateFlowLayout>
@@ -531,10 +534,13 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI12AssetsPicker")
 
 
 
+
 SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI16InAppStoryEditor")
 @interface InAppStoryEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
