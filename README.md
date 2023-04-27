@@ -23,7 +23,7 @@ Library for adding a UGC editor to the InAppStorySDK
 
 | InAppStory version | Build version | iOS version |
 |--------------------|---------------|-------------|
-| 1.2.0              | 362           | >= 11.0     |
+| 1.2.0              | 362           | >= 11.0     | 
 
 Version of the library can be obtained from the parameter `InAppStoryEditor.frameworkInfo`
 
@@ -34,7 +34,7 @@ Version of the library can be obtained from the parameter `InAppStoryEditor.fram
 
 ```ruby
 use_frameworks!
-pod 'InAppStoryUGC', :git => 'https://github.com/inappstory/ios-ugc-sdk.git'
+pod 'InAppStoryUGC', :git => 'https://github.com/inappstory/ios-ugc-sdk.git', :tag => '1.2.0'
 ```
 
 ### Carthage
