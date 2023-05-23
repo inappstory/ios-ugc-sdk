@@ -267,6 +267,7 @@ SWIFT_CLASS("_TtC21InAppStoryUGC_SwiftUI16InAppStoryEditor")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

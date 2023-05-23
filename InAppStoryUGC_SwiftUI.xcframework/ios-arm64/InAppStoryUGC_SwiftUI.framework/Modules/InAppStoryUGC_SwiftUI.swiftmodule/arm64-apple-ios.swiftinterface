@@ -9,6 +9,7 @@ import Foundation
 import InAppStorySDK_SwiftUI
 import MobileCoreServices
 import Photos
+import PhotosUI
 import Swift
 import SwiftUI
 import UIKit

@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/InAppStoryUGC_SwiftUI-Swift.h</key>
 		<data>
-		hw1VqZoZdKOvVrLO6T3Sn416UdE=
+		k296H7NWiY3yMUgLn08696bxvws=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0OBU2Q6t0WxdW4uC1w1hKe0tL1g=
+		GnAqB00VEG/AEPezzjXg/G6PEXw=
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		F/X+fylGEoiBoNjCSa6tLSDj5GM=
+		ttULdmEuYU66K3JMLpYTFsDRLzw=
 		</data>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qED4vg5A+JvsXmmKEE9PYeUJ2UQ=
+		jL1KuLIyHhHTFMHOi0ZoFRv6G9o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UZB8p3lsNm/KS/otg5M6puncjMeik4hqFhEnRiY5OP4=
+			tNK6Jt0x+uCcSN80eBKhiyxhklbJUjmX6o6Or9AkcZ8=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cSiLhgTywHXpo1dD5YRaJMKPbjAl3Fo1lkrPVwMLhyo=
+			7XNIycgeydZOqy8XVYAR/FVCC6V6L4HJJYUWB9BV/ew=
 			</data>
 		</dict>
 		<key>Modules/InAppStoryUGC_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CXdXNI2deTOEJIRFUUA9n669GlZHMhH76BHuHItwolQ=
+			jlSDkSqsGMCz1oafUKSd7EtdEMB3j+Vu7dH1+ouKnHo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
