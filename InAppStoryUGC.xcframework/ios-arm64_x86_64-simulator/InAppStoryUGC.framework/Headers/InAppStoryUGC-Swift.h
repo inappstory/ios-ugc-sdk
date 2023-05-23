@@ -269,6 +269,7 @@ SWIFT_CLASS("_TtC13InAppStoryUGC16InAppStoryEditor")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -539,6 +540,7 @@ SWIFT_CLASS("_TtC13InAppStoryUGC16InAppStoryEditor")
 @interface InAppStoryEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

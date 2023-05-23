@@ -9,6 +9,7 @@ import InAppStorySDK
 @_exported import InAppStoryUGC
 import MobileCoreServices
 import Photos
+import PhotosUI
 import Swift
 import UIKit
 import UniformTypeIdentifiers
