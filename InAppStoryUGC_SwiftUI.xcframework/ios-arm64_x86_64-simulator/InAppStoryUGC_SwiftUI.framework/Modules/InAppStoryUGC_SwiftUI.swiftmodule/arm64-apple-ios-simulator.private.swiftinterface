@@ -6,7 +6,7 @@ import AssetsLibrary
 import AudioToolbox
 import Combine
 import Foundation
-import InAppStorySDK_SwiftUI
+@_spi(Private) @_spi(UGC) import InAppStorySDK_SwiftUI
 import MobileCoreServices
 import Photos
 import PhotosUI
