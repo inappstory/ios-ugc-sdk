@@ -6,6 +6,6 @@ framework module InAppStoryUGC {
 }
 
 module InAppStoryUGC.Swift {
-    header "InAppStoryUGC-Swift.h"
-    requires objc
+  header "InAppStoryUGC-Swift.h"
+  requires objc
 }
