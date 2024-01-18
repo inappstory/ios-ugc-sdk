@@ -3,8 +3,10 @@
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InAppStoryUGC
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
+import AVKit
 import AssetsLibrary
 import AudioToolbox
+import CoreServices
 import Foundation
 import InAppStorySDK
 @_exported import InAppStoryUGC
@@ -12,6 +14,7 @@ import MobileCoreServices
 import Photos
 import PhotosUI
 import Swift
+import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
 import WebKit
