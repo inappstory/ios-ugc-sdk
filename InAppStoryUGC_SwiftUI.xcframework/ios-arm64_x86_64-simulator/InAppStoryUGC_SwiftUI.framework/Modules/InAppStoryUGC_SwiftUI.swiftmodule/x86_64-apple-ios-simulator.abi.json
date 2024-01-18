@@ -43,6 +43,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -55,6 +65,47 @@
         "kind": "Import",
         "name": "Photos",
         "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "InAppStorySDK_SwiftUI",
+        "printedName": "InAppStorySDK_SwiftUI",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreServices",
+        "printedName": "CoreServices",
         "declKind": "Import",
         "moduleName": "InAppStoryUGC_SwiftUI"
       },
@@ -446,12 +497,12 @@
             "mangledName": "$s21InAppStoryUGC_SwiftUI0abC6EditorCACycfc",
             "moduleName": "InAppStoryUGC_SwiftUI",
             "overriding": true,
-            "implicit": true,
             "objc_name": "init",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Override"
+              "Override",
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -1839,6 +1890,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -1931,6 +1992,26 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -1945,6 +2026,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1981,6 +2072,33 @@
         "moduleName": "InAppStoryUGC_SwiftUI",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobileCoreServices",
+        "printedName": "MobileCoreServices",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "InAppStorySDK_SwiftUI",
+        "printedName": "InAppStorySDK_SwiftUI",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "SPIAccessControl"
         ]
       },
       {
@@ -2270,6 +2388,23 @@
       },
       {
         "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2336,6 +2471,33 @@
         "kind": "Import",
         "name": "Photos",
         "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI"
+      },
+      {
+        "kind": "Import",
+        "name": "InAppStorySDK_SwiftUI",
+        "printedName": "InAppStorySDK_SwiftUI",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC_SwiftUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobileCoreServices",
+        "printedName": "MobileCoreServices",
         "declKind": "Import",
         "moduleName": "InAppStoryUGC_SwiftUI"
       },
@@ -2605,14 +2767,14 @@
       "kind": "StringLiteral",
       "offset": 445,
       "length": 7,
-      "value": "\"1.2.6\""
+      "value": "\"1.3.0\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 5,
-      "value": "\"458\""
+      "value": "\"508\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
@@ -2902,6 +3064,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Helpers\/AtomicArray.swift",
+      "kind": "IntegerLiteral",
+      "offset": 604,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPreviewController.swift",
       "kind": "Array",
       "offset": 572,
@@ -2932,28 +3101,28 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/UGCEditor.swift",
       "kind": "IntegerLiteral",
-      "offset": 1959,
+      "offset": 1884,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/UGCEditor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2607,
+      "offset": 2582,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/UGCEditor.swift",
       "kind": "BooleanLiteral",
-      "offset": 2651,
+      "offset": 2626,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/UGCEditor.swift",
       "kind": "Array",
-      "offset": 47411,
+      "offset": 48020,
       "length": 2,
       "value": "[]"
     },
@@ -2993,6 +3162,48 @@
       "value": "\"InAppStoryUGC_SwiftUI.PaddingLabel\""
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Reachability\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1687,
+      "length": 33,
+      "value": "\"ReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Reachability\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1817,
+      "length": 24,
+      "value": "\"reachabilityChangedIAS\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Reachability\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3272,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Reachability\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4896,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Reachability\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5006,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Reachability\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 5143,
+      "length": 32,
+      "value": "\"uk.co.ashleymills.reachability\""
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/Camera.swift",
       "kind": "IntegerLiteral",
       "offset": 1680,
@@ -3012,6 +3223,13 @@
       "offset": 1785,
       "length": 15,
       "value": "\"session queue\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/Managers\/Upload\/UploadManager.swift",
+      "kind": "Array",
+      "offset": 2208,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
