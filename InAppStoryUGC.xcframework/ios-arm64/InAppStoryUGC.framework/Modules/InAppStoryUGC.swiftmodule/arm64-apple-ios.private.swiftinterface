@@ -1,12 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InAppStoryUGC
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name InAppStoryUGC
 import AVFoundation
 import AVKit
 import AssetsLibrary
 import AudioToolbox
 import CoreServices
+import DeveloperToolsSupport
 import Foundation
 @_spi(Private) @_spi(UGC) import InAppStorySDK
 @_exported import InAppStoryUGC
@@ -14,12 +14,14 @@ import MobileCoreServices
 import Photos
 import PhotosUI
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class InAppStoryEditor : ObjectiveC.NSObject {
   public static let shared: InAppStoryUGC.InAppStoryEditor
   public static let VersionSDK: Swift.String
@@ -27,12 +29,12 @@ import _StringProcessing
   public static var frameworkInfo: Swift.String {
     get
   }
-  public var editorPlaceholderView: InAppStorySDK.DownloadPlaceholderProtocol?
+  public var editorPlaceholderView: (any InAppStorySDK.DownloadPlaceholderProtocol)?
   @objc override dynamic public init()
   @objc deinit
 }
 extension InAppStoryUGC.InAppStoryEditor {
-  public func showEditor(payload: Swift.Dictionary<Swift.String, Any?>? = nil, from target: UIKit.UIViewController, delegate: InAppStoryUGC.InAppStoryEditorDelegate? = nil, complete: @escaping (_ show: Swift.Bool) -> Swift.Void)
+  public func showEditor(payload: Swift.Dictionary<Swift.String, Any?>? = nil, from target: UIKit.UIViewController, delegate: (any InAppStoryUGC.InAppStoryEditorDelegate)? = nil, complete: @escaping (_ show: Swift.Bool) -> Swift.Void)
   public func closeEditor(complete: @escaping () -> Swift.Void)
 }
 public enum AssetType : Swift.String {
@@ -77,8 +79,8 @@ public protocol InAppStoryEditorDelegate : ObjectiveC.NSObjectProtocol {
   func editorEvent(name: Swift.String, data: Swift.Dictionary<Swift.String, Any>)
 }
 public struct FilePickerOptions : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension InAppStoryUGC.AssetType : Swift.Equatable {}
 extension InAppStoryUGC.AssetType : Swift.Hashable {}
