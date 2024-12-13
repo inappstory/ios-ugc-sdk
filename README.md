@@ -4,7 +4,7 @@ Library for adding a UGC editor to the InAppStorySDK
 
 | InAppStory version | Build version | iOS version |
 |--------------------|---------------|-------------|
-| 1.3.2              | 526           | >= 13.4     |
+| 1.3.3              | 528           | >= 13.4     |
 
 Version of the library can be obtained from the parameter `InAppStoryEditor.frameworkInfo`
 
