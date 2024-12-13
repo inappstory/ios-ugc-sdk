@@ -2589,14 +2589,14 @@
       "kind": "StringLiteral",
       "offset": 445,
       "length": 7,
-      "value": "\"1.3.2\""
+      "value": "\"1.3.3\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 5,
-      "value": "\"526\""
+      "value": "\"528\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
