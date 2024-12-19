@@ -2812,14 +2812,14 @@
       "kind": "StringLiteral",
       "offset": 445,
       "length": 7,
-      "value": "\"1.3.3\""
+      "value": "\"1.3.4\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 5,
-      "value": "\"528\""
+      "value": "\"532\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
@@ -3181,7 +3181,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/UGCEditor.swift",
       "kind": "Array",
-      "offset": 47270,
+      "offset": 47551,
       "length": 2,
       "value": "[]"
     },

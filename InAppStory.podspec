@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name = 'InAppStoryUGC_SwiftUI'
-    s.version = '1.3.3'
+    s.version = '1.3.4'
     s.platform = :ios, '13.4'
     s.license  = { :type => 'MIT', :file => 'LICENSE' }
     s.homepage = 'https://github.com/inappstory/ios-ugc-sdk'
