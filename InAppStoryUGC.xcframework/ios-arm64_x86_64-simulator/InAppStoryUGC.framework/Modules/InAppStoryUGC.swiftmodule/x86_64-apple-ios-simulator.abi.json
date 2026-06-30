@@ -340,12 +340,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "InAppStorySDK.DownloadPlaceholderProtocol?",
+                "printedName": "(any InAppStorySDK.DownloadPlaceholderProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "DownloadPlaceholderProtocol",
-                    "printedName": "InAppStorySDK.DownloadPlaceholderProtocol",
+                    "printedName": "any InAppStorySDK.DownloadPlaceholderProtocol",
                     "usr": "s:13InAppStorySDK27DownloadPlaceholderProtocolP"
                   }
                 ],
@@ -371,12 +371,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "InAppStorySDK.DownloadPlaceholderProtocol?",
+                    "printedName": "(any InAppStorySDK.DownloadPlaceholderProtocol)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DownloadPlaceholderProtocol",
-                        "printedName": "InAppStorySDK.DownloadPlaceholderProtocol",
+                        "printedName": "any InAppStorySDK.DownloadPlaceholderProtocol",
                         "usr": "s:13InAppStorySDK27DownloadPlaceholderProtocolP"
                       }
                     ],
@@ -403,12 +403,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "InAppStorySDK.DownloadPlaceholderProtocol?",
+                    "printedName": "(any InAppStorySDK.DownloadPlaceholderProtocol)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DownloadPlaceholderProtocol",
-                        "printedName": "InAppStorySDK.DownloadPlaceholderProtocol",
+                        "printedName": "any InAppStorySDK.DownloadPlaceholderProtocol",
                         "usr": "s:13InAppStorySDK27DownloadPlaceholderProtocolP"
                       }
                     ],
@@ -523,12 +523,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "InAppStoryUGC.InAppStoryEditorDelegate?",
+                "printedName": "(any InAppStoryUGC.InAppStoryEditorDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "InAppStoryEditorDelegate",
-                    "printedName": "InAppStoryUGC.InAppStoryEditorDelegate",
+                    "printedName": "any InAppStoryUGC.InAppStoryEditorDelegate",
                     "usr": "s:13InAppStoryUGC0abC14EditorDelegateP"
                   }
                 ],
@@ -1005,9 +1005,9 @@
             "mangledName": "$s13InAppStoryUGC12AssetsPickerC9assetTypeAA05AssetH0Ovp",
             "moduleName": "InAppStoryUGC",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1100,9 +1100,9 @@
             "mangledName": "$s13InAppStoryUGC12AssetsPickerC11acceptTypesSaySSGvp",
             "moduleName": "InAppStoryUGC",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1203,9 +1203,9 @@
             "mangledName": "$s13InAppStoryUGC12AssetsPickerC8multipleSbvp",
             "moduleName": "InAppStoryUGC",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1867,6 +1867,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -2310,7 +2317,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -2335,7 +2342,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -2438,13 +2445,6 @@
       },
       {
         "kind": "Import",
-        "name": "AssetsLibrary",
-        "printedName": "AssetsLibrary",
-        "declKind": "Import",
-        "moduleName": "InAppStoryUGC"
-      },
-      {
-        "kind": "Import",
         "name": "Photos",
         "printedName": "Photos",
         "declKind": "Import",
@@ -2513,11 +2513,60 @@
         "declAttributes": [
           "SPIAccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "InAppStoryUGC"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoProgressView.swift",
+      "kind": "Array",
+      "offset": 713,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 815,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoProgressView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 854,
+      "length": 2,
+      "value": "20"
+    },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/PhotoPreviewController.swift",
       "kind": "Array",
@@ -2551,7 +2600,7 @@
       "kind": "StringLiteral",
       "offset": 494,
       "length": 5,
-      "value": "\"512\""
+      "value": "\"514\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/InAppStoryEditor.swift",
@@ -2929,7 +2978,7 @@
       "kind": "FloatLiteral",
       "offset": 990,
       "length": 4,
-      "value": "0.1"
+      "value": "-0.1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/CameraController.swift",
@@ -2941,21 +2990,21 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/Camera.swift",
       "kind": "IntegerLiteral",
-      "offset": 1680,
+      "offset": 1659,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/Camera.swift",
       "kind": "StringLiteral",
-      "offset": 1718,
+      "offset": 1697,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/Camera.swift",
       "kind": "StringLiteral",
-      "offset": 1785,
+      "offset": 1764,
       "length": 15,
       "value": "\"session queue\""
     },
@@ -3031,59 +3080,122 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1089,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1135,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1241,
+      "offset": 1323,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 1258,
+      "offset": 1340,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1135,
+      "offset": 1217,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1426,
+      "offset": 1508,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 1439,
+      "offset": 1521,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "FloatLiteral",
-      "offset": 1320,
+      "offset": 1402,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1578,
+      "offset": 1660,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/InAppStoryUGC\/Classes\/AssetsPicker\/VideoPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1606,
+      "offset": 1688,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 10,
+      "value": "\"AgreeBtn\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 863,
+      "length": 9,
+      "value": "\"BackBtn\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1007,
+      "length": 17,
+      "value": "\"CameraCellImage\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1152,
+      "length": 11,
+      "value": "\"FlipArrow\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 10,
+      "value": "\"PhotoBtn\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1437,
+      "length": 16,
+      "value": "\"StartRecordBtn\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/InAppStoryUGC\/IntermediateBuildFilesPath\/InAppStoryUGC.build\/Release-iphonesimulator\/InAppStoryUGC.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1589,
+      "length": 15,
+      "value": "\"StopRecordBtn\""
     }
   ]
 }
